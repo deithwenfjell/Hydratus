@@ -1,0 +1,23 @@
+﻿<Properties StartupConfiguration="{5032AF04-DC00-4099-8B8A-E2F9F2D08CBD}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/ExtendedTabbedPageRenderer.cs">
+    <Files>
+      <File FileName="Hydratus/App.xaml.cs" Line="7" Column="13" />
+      <File FileName="Hydratus/MainPage.xaml" Line="217" Column="1" />
+      <File FileName="Hydratus/MainPage.xaml.cs" Line="99" Column="9" />
+      <File FileName="iOS/AppDelegate.cs" Line="26" Column="1" />
+      <File FileName="Droid/MainActivity.cs" Line="27" Column="1" />
+      <File FileName="iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="iOS/ExtendedTabbedPageRenderer.cs" Line="31" Column="73" />
+      <File FileName="Hydratus/Nastavenie.cs" Line="19" Column="41" />
+      <File FileName="iOS/UserNotificationCenterDelegate.cs" Line="10" Column="49" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Hydratus.Droid PreferredExecutionTarget="Android.AVD_for_Nexus_4_by_Google" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Hydratus.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.29997310-E063-488D-AE44-E4F55578CF0A" automaticSigning="False" />
+  <MultiItemStartupConfigurations />
+</Properties>

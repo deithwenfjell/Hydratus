@@ -1,0 +1,15 @@
+/Users/kozel/Projects/Hydratus/Hydratus/bin/Release/Hydratus.dll
+/Users/kozel/Projects/Hydratus/Hydratus/bin/Release/Xamarin.Forms.Core.dll
+/Users/kozel/Projects/Hydratus/Hydratus/bin/Release/Xamarin.Forms.Platform.dll
+/Users/kozel/Projects/Hydratus/Hydratus/bin/Release/Xamarin.Forms.Xaml.dll
+/Users/kozel/Projects/Hydratus/Hydratus/bin/Release/Xamarin.Forms.Core.pdb
+/Users/kozel/Projects/Hydratus/Hydratus/bin/Release/Xamarin.Forms.Core.dll.mdb
+/Users/kozel/Projects/Hydratus/Hydratus/bin/Release/Xamarin.Forms.Core.xml
+/Users/kozel/Projects/Hydratus/Hydratus/bin/Release/Xamarin.Forms.Xaml.pdb
+/Users/kozel/Projects/Hydratus/Hydratus/bin/Release/Xamarin.Forms.Xaml.dll.mdb
+/Users/kozel/Projects/Hydratus/Hydratus/bin/Release/Xamarin.Forms.Xaml.xml
+/Users/kozel/Projects/Hydratus/Hydratus/obj/Release/Hydratus.csproj.CoreCompileInputs.cache
+/Users/kozel/Projects/Hydratus/Hydratus/obj/Release/Hydratus.App.xaml.g.cs
+/Users/kozel/Projects/Hydratus/Hydratus/obj/Release/Hydratus.HydratusPage.xaml.g.cs
+/Users/kozel/Projects/Hydratus/Hydratus/obj/Release/Hydratus.MainPage.xaml.g.cs
+/Users/kozel/Projects/Hydratus/Hydratus/obj/Release/Hydratus.dll

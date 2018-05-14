@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hydratus.MainPage">
+    
+    <ContentPage Title="Hydratus">
+
+        <!--Fix pre iOS-->
+        <ContentPage.Padding>
+           <OnPlatform 
+            x:TypeArguments="Thickness"
+            iOS="0, 20, 0, 0">
+            </OnPlatform>
+        </ContentPage.Padding>
+
+        <ContentPage.Content>
+
+            <StackLayout>
+
+                <Label 
+                Text="Hydratus" 
+                FontSize="30"
+                FontAttributes="Bold"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand"
+                Margin="10"/>
+
+                <StackLayout
+                    HorizontalOptions="Center"
+                    VerticalOptions="End">
+
+                    <StackLayout HorizontalOptions="Center">
+                        <Label 
+                            FontSize="Medium" 
+                            Text="0,2L" 
+                            HorizontalOptions="Center"/>
+                        <Stepper 
+                            x:Name="Dvojdecak" 
+                            Increment="0.2" 
+                            ValueChanged="ManipulaciaPoctu"/>
+                    </StackLayout>
+
+                    <StackLayout HorizontalOptions="Center">
+                        <Label 
+                            FontSize="Medium" 
+                            Text="0,3L" 
+                            HorizontalOptions="Center"/>
+                        <Stepper 
+                            x:Name="Trojdecak" 
+                            Increment="0.3" 
+                            ValueChanged="ManipulaciaPoctu"/>
+                    </StackLayout>
+
+                    <StackLayout HorizontalOptions="Center">
+                        <Label 
+                            FontSize="Medium" 
+                            Text="0,5L" 
+                            HorizontalOptions="Center"/>
+                        <Stepper 
+                            x:Name="Pollitrak" 
+                            Increment="0.5" 
+                            ValueChanged="ManipulaciaPoctu"/>
+                    </StackLayout>
+
+
+                </StackLayout>
+
+                <StackLayout Margin="20">
+
+                    <Label Text="Dnes vypité:"/>
+
+                    <ProgressBar 
+                        x:Name="progres" 
+                        Progress="0" 
+                        Margin="0" 
+                        HeightRequest="4" />
+                    
+
+                    <StackLayout
+                        Orientation="Horizontal"
+                        HorizontalOptions="Center"
+                        VerticalOptions="CenterAndExpand"
+                        Padding="0">
+
+                        <Label 
+                            FontSize="Large" 
+                            x:Name="vypite" 
+                            Text="0">
+                        </Label>
+
+                        <Label 
+                            FontSize="Large" 
+                            Text="z">
+                        </Label>
+
+                        <Label 
+                            FontSize="Large" 
+                            x:Name="ciel" 
+                            Text="3">
+                        </Label>
+
+                        <Label 
+                            FontSize="Large" 
+                            Text="litrov">
+                        </Label>
+
+                    </StackLayout>
+
+                    
+                </StackLayout>
+
+                  <StackLayout 
+                    Margin="20" 
+                    VerticalOptions="EndAndExpand">
+
+                    <Label Text="Odporúčaný príjem v čase:"/>
+
+                    <Label 
+                        FontSize="Large" 
+                        HorizontalOptions="Center" 
+                        x:Name="casovac" 
+                        Text="- neaktívne -">
+                    </Label>
+
+                </StackLayout>
+               
+            </StackLayout>
+        </ContentPage.Content>
+
+    </ContentPage>
+
+    <ContentPage Title="Bio">
+        <ContentPage.Padding>
+            <OnPlatform 
+                x:TypeArguments="Thickness"
+                iOS="0, 20, 0, 0">
+            </OnPlatform>
+        </ContentPage.Padding>
+
+        <ContentPage.Content>
+
+            <StackLayout Padding="0, 20, 0, 0">
+
+                <StackLayout HorizontalOptions="Center">
+                    <Label 
+                        Text="Váha" 
+                        FontSize="Medium" 
+                        HorizontalOptions="Center">
+                    </Label>
+
+                    <Entry 
+                        Keyboard="Numeric" 
+                        Placeholder="Sem vpíšte váhu" 
+                        x:Name="vaha" 
+                        HorizontalOptions="Center" 
+                        Completed="NahrataVaha"/>
+
+                </StackLayout>
+
+                <StackLayout HorizontalOptions="Center">
+                    <Label 
+                        Text="Výška" 
+                        FontSize="Medium" 
+                        HorizontalOptions="Center">
+                    </Label>
+
+                    <Entry 
+                        Keyboard="Numeric" 
+                        Placeholder="Sem vpíšte výšku" 
+                        x:Name="vyska" 
+                        HorizontalOptions="Center" 
+                        Completed="NahrataVyska"/>
+
+                </StackLayout>
+
+                <StackLayout HorizontalOptions="Center"> 
+                    <Label 
+                        Text="Pohlavie" 
+                        FontSize="Medium" 
+                        HorizontalOptions="Center">
+                    </Label>
+
+                    <Picker 
+                        x:Name="picker" 
+                        Title="Vyberte pohlavie" >
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Muž</x:String>
+                                <x:String>Žena</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+
+                </StackLayout>
+
+                <Button 
+                    HorizontalOptions="Center" 
+                    x:Name="potvrdBMI" 
+                    Text="OK" 
+                    FontSize="Large" 
+                    Clicked="PotvrdBMI_Clicked"/>
+
+                <Label 
+                    HorizontalOptions="Center" 
+                    Text="Vyplnte údaje." 
+                    x:Name="infoBMI"/>
+
+            </StackLayout>
+
+        </ContentPage.Content>
+
+    </ContentPage>
+
+
+
+</TabbedPage>
